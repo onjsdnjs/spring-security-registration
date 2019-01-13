@@ -67,11 +67,13 @@ public class CaptchaService implements ICaptchaService {
 
     @Override
     public String getReCaptchaSite() {
+
         return captchaSettings.getSite();
     }
 
     @Override
     public String getReCaptchaSecret() {
+
         return captchaSettings.getSecret();
     }
 

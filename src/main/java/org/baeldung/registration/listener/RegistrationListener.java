@@ -31,6 +31,7 @@ public class RegistrationListener implements ApplicationListener<OnRegistrationC
 
     @Override
     public void onApplicationEvent(final OnRegistrationCompleteEvent event) {
+
         this.confirmRegistration(event);
     }
 

@@ -91,6 +91,7 @@ public class UserService implements IUserService {
 
     @Override
     public void saveRegisteredUser(final User user) {
+
         userRepository.save(user);
     }
 
@@ -134,6 +135,7 @@ public class UserService implements IUserService {
 
     @Override
     public User findUserByEmail(final String email) {
+
         return userRepository.findByEmail(email);
     }
 
@@ -150,6 +152,7 @@ public class UserService implements IUserService {
 
     @Override
     public Optional<User> getUserByID(final long id) {
+
         return userRepository.findById(id);
     }
 
@@ -206,6 +209,7 @@ public class UserService implements IUserService {
     }
 
     private boolean emailExist(final String email) {
+
         return userRepository.findByEmail(email) != null;
     }
 

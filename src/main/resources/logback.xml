@@ -11,18 +11,19 @@
 		
 	</appender>
 
-	<logger name="org.baeldung" level="DEBUG" />
+	<logger name="org.baeldung" level="INFO" />
 
 	<!-- to view SQL statements, change to DEBUG -->
-	<logger name="org.hibernate.SQL" level="WARN" />
+	<logger name="org.hibernate.SQL" level="DEBUG" />
+	<logger name="org.hibernate.type.descriptor.sql" level="DEBUG" />
 
-	<logger name="org.springframework" level="WARN" />
-	<logger name="org.springframework.transaction" level="WARN" />
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.springframework.transaction" level="INFO" />
 
 	<!-- in order to debug some marshalling issues, this needs to be TRACE -->
-	<logger name="org.springframework.web.servlet.mvc" level="WARN" />
+	<logger name="org.springframework.web.servlet.mvc" level="INFO" />
 
-	<root level="INFO">
+	<root level="DEBUG">
 		<appender-ref ref="STDOUT" />
 	</root>
 
